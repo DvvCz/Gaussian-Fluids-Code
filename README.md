@@ -132,4 +132,22 @@ python advance.py --start_frame 100 --init_cond leapfrog --dt .025 --last_time 4
 
 ## Citation
 
-Coming soon!
+```
+@inproceedings{xing2025gaussian-fluids,
+	author = {Xing, Jingrui and Wang, Bin and Chu, Mengyu and Chen, Baoquan},
+	title = {Gaussian Fluids: A Grid-Free Fluid Solver based on Gaussian Spatial Representation},
+	year = {2025},
+	isbn = {9798400715402},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3721238.3730620},
+	doi = {10.1145/3721238.3730620},
+	abstract = {We present a grid-free fluid solver featuring a novel Gaussian representation. Drawing inspiration from the expressive capabilities of 3D Gaussian Splatting in multi-view image reconstruction, we model the continuous flow velocity as a weighted sum of multiple Gaussian functions. This representation is continuously differentiable, which enables us to derive spatial differentials directly and solve the time-dependent PDE via a custom first‑order optimization tailored to fluid dynamics. Compared to traditional discretizations, which typically adopt Eulerian, Lagrangian, or hybrid perspectives, our approach is inherently memory-efficient and spatially adaptive, enabling it to preserve fine-scale structures and vortices with high fidelity. While these advantages are also sought by implicit neural representations, GSR offers enhanced robustness, accuracy, and generality across diverse fluid phenomena, with improved computational efficiency during temporal evolution. Though our first‑order solver does not yet match the speed of fluid solvers using explicit representations, its continuous nature substantially reduces spatial discretization error and opens a new avenue for high‑fidelity simulation. We evaluate the proposed solver across a broad range of 2D and 3D fluid phenomena, demonstrating its ability to preserve intricate vortex dynamics, accurately capture boundary-induced effects such as Kármán vortex streets, and remain robust across long time horizons—all without additional parameter tuning. Our results suggest that GSR offers a compelling direction for future research in fluid simulation.},
+	booktitle = {ACM SIGGRAPH 2025 Conference Papers},
+	articleno = {31},
+	numpages = {11},
+	keywords = {Fluid Simulation, Gaussian Spatial Representation},
+	location = {Vancouver, BC, Canada},
+	series = {SIGGRAPH '25}
+}
+```

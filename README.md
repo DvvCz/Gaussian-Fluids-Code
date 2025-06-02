@@ -1,6 +1,6 @@
 # Gaussian Fluids: A Grid-Free Fluid Solver based on Gaussian Spatial Representation
 
-### [Project Page]() (coming soon)  | [Paper]() (coming soon)
+### [Project Page](https://xjr01.github.io/GaussianFluids/)  | [Paper](https://xjr01.github.io/files/GaussianFluids.pdf)
 
 ![](images/representative_image.jpg)
 

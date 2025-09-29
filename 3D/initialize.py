@@ -83,7 +83,7 @@ def SimulationInitialize():
 		)
 		return data
 	
-	fit_velocity_with_gradient(gaussian_velocity, velocity_ref, velocity_ref.gradient, default_generator, max_epoch=10000)
+	fit_velocity_with_gradient(gaussian_velocity, velocity_ref, velocity_ref.gradient, default_generator, max_epoch=500)
 	gaussian_velocity.save(os.path.join(cmd_args.dir, 'gaussian_velocity_0.pt'))
 	
 	def vorticity(x):

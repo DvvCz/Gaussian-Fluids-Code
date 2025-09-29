@@ -385,6 +385,7 @@ if __name__ == '__main__':
 		advect_covector_field(new_gaussian_velocity, gaussian_velocity, time_step, new_gaussian_velocity.x_min, new_gaussian_velocity.x_max, new_gaussian_velocity.y_min, new_gaussian_velocity.y_max, new_gaussian_velocity.z_min, new_gaussian_velocity.z_max)
 		project(new_gaussian_velocity, AdvectedCovectorField(gaussian_velocity, gaussian_velocity, time_step, x_min, x_max, y_min, y_max, z_min, z_max), x_min, x_max, y_min, y_max, z_min, z_max, default_data_generator, default_test_generator, boundary_lambda=cmd_args.boundary, boundary_generator=boundary_sampler[cmd_args.init_cond], max_epoch=20000, verbose=1, frame_id=cnt)
 		gaussian_velocity, new_gaussian_velocity = new_gaussian_velocity, gaussian_velocity
+		print(f"Wrote frame {cnt}")
 		write_vti(lambda x: (vorticity(x) ** 2).sum(axis=-1) ** .5, x_min, x_max, y_min, y_max, z_min, z_max, os.path.join(cmd_args.dir, f'vorticity_{cnt}.vti'), x_N=x_Nvis, y_N=y_Nvis, z_N=z_Nvis)
 		write_vti(divergence, x_min, x_max, y_min, y_max, z_min, z_max, os.path.join(cmd_args.dir, f'divergence_{cnt}.vti'), x_N=x_Nvis, y_N=y_Nvis, z_N=z_Nvis)
 		gaussian_velocity.save(os.path.join(cmd_args.dir, f'gaussian_velocity_{cnt}.pt'))

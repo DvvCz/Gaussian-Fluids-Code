@@ -18,7 +18,7 @@ domain = {
 }
 
 initial_particle_count = {
-	'leapfrog': (15, 15, 15),
+	'leapfrog': (10, 10, 10),
 	'single_vortex_ring': (40, 40, 40),
 	'ring_collide': (40, 40, 40),
 	'ring_with_obstacle': (40, 40, 40)

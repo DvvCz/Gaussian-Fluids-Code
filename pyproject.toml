@@ -1,0 +1,16 @@
+[project]
+name = "gaussian-fluids-code"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "manta==3.0.0",
+    "matplotlib==3.6.2",
+    "numpy>1.25.2",
+    "taichi>=1.7.4",
+    "torch>=2.8.0",
+    "tqdm==4.64.1",
+    "visdom==0.2.4",
+    "vtk==9.3.0",
+]

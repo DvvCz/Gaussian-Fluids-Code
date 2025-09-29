@@ -1,7 +1,0 @@
-manta==3.0.0
-matplotlib==3.6.2
-numpy==1.25.2
-tqdm==4.64.1
-visdom==0.2.4
-vtk==9.3.0
-# torch==1.12.1+cu116
